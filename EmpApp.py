@@ -1,3 +1,6 @@
+
+
+
 from flask import Flask, render_template, request
 from pymysql import connections
 import os
@@ -19,6 +22,9 @@ db_conn = connections.Connection(
 )
 output = {}
 table = 'employee'
+
+
+
 
 
 @app.route("/", methods=['GET', 'POST'])
